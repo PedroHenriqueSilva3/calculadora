@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Questão 4</title>
+
+</head>
+<body>
+    
+    <script>
+        function gasto(){
+
+var Km = parseFloat(document.getElementById('quilometragem').value)
+var valorC = parseFloat(document.getElementById('vCombustivel').value)
+var Valorkm = valorC/8
+var Valor = Valorkm*Km
+document.getElementById('mostrar').innerHTML = "Valor do combustivel gasto foi: " + Valor + "R$.";
+}
+    </script>
+    <h1>Gasto da quilometragem do carro</h1>
+    
+       <p>Digite a quilometragem percorrida do carro:</p>
+
+        <input type="number" id="quilometragem"> <br>
+
+       <p>Digite o valor do combustivel:</p>
+
+        <input type="number" id="vCombustivel"> <br>
+
+        <button onclick="gasto()">Calcule o valor do combustível gasto</button>
+        
+        <h4 id="mostrar"></h4>
+
+</body>
+</html>
